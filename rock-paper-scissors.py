@@ -18,27 +18,11 @@ def rps():
             user = input('enter, rock  paper or scissors:\n').lower()
             value = True
 
-            if pc == 'scissors' and user == 'paper':
+            if pc == 'scissors' and user == 'paper' or pc == 'paper' and user == 'rock' or pc == 'rock' and user == 'scissors':
                 pc_wins += 1
                 print(f'pc won with the {pc}')
 
-            elif pc == 'scissors' and user == 'rock':
-                user_wins += 1
-                print(f'you won, pc had {pc}')
-
-            elif pc == 'paper' and user == 'scissors':
-                user_wins +=1
-                print(f'you won, pc had {pc}')
-
-            elif pc == 'paper' and user == 'rock':
-                pc_wins += 1
-                print(f'pc won with the {pc}')
-
-            elif pc == 'rock' and user == 'scissors':
-                pc_wins += 1
-                print(f'pc won with the {pc}')
-            
-            elif pc == 'rock' and user == 'paper':
+            elif pc == 'scissors' and user == 'rock' or pc == 'paper' and user == 'scissors' or pc == 'rock' and user == 'paper':
                 user_wins += 1
                 print(f'you won, pc had {pc}')
 
